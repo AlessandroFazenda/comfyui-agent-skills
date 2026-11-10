@@ -1,0 +1,26 @@
+{
+  "name": "comfyui-agent-skills",
+  "owner": {
+    "name": "AlessandroFazenda"
+  },
+  "metadata": {
+    "description": "Agent skills that drive a local ComfyUI: character, environment and costume sheets, prop upscaling and MiniMax H3 dialogue video.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "comfyui-agent-skills",
+      "source": "./",
+      "description": "Reference sheets (characters, locations, costumes, props) and MiniMax H3 dialogue clips in a local ComfyUI through comfy-mcp, plus optional Vast.ai GPU rental.",
+      "strict": false,
+      "skills": [
+        "./skills/character-sheet",
+        "./skills/environment-sheet",
+        "./skills/costume-sheet",
+        "./skills/upscale-prop",
+        "./skills/video-h3",
+        "./skills/vastai"
+      ]
+    }
+  ]
+}
